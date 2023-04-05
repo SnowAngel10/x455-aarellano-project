@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pink Petals - Weddings</title>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pink Petals - Seasons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- 1. Ref. link using lightbox: https://lokeshdhakar.com/projects/lightbox2/ --
+      -- 2. show students how to read instructions and use plugin --
+      -- 3. provide students with lightbox.min.css, lightbox.min.js and lightbox-plus-jquery.min.js --
+      -- 4. need to close.png, loading.gif, next.png and prev.png assets/image folder to use -->
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/lightbox.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css" />
+</head>
+
+<body>
+    <div id="top-bar">
+      <a href="1index.html">
+        <img src="assets/images/logo_with_text.png" alt="Logo" id="top-logo" />
+      </a>
+      <a href="2inspiration.html">Inspiration</a>
+      <a href="3occasions.html">Occasions</a>
+      <a href="4supplies.html">Supplies</a>
+      <a href="5weddings.html">Weddings</a>
+      <a href="6seasons.html">Seasons</a>
+      <a href="7our-story.html">Our Story</a>
+   
+    </div>
+    <article>
+      <div>
+        <h1>Seasons</h1>
+      </div>
+    </article>
+
+<div style="margin: 0 auto; text-align: center;">
+   <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <figcaption>Early Spring</figcaption>
+    <img src="./assets/images/earlySpring_thumbnail.png" onclick="openModal();currentSlide(1)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+  <div class="column">
+    <figcaption>Early Summer</figcaption>
+    <img src="./assets/images/earlySummer_thumbnail.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+  <div class="column">
+    <figcaption>Early Fall</figcaption>
+    <img src="./assets/images/earlyFall_thumbnail.png" onclick="openModal();currentSlide(3)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+  <div class="column">
+    <figcaption>Early Winter</figcaption>
+    <img src="./assets/images/earlyWinter_thumbnail.png" onclick="openModal();currentSlide(4)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <figcaption>Late Spring</figcaption>
+    <img src="./assets/images/lateSpring_thumbnail.png" onclick="openModal();currentSlide(5)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+  <div class="column">
+    <figcaption>Late Summer</figcaption>
+    <img src="./assets/images/lateSummer_thumbnail.png" onclick="openModal();currentSlide(6)" class="hover-shadow" style="height: 300px; width: auto; ">
+  </div>
+  <div class="column">
+    <figcaption>Late Fall</figcaption>
+    <img src="./assets/images/lateFall_thumbnail.png" onclick="openModal();currentSlide(7)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+  <div class="column">
+    <figcaption>Late Winter</figcaption>
+    <img src="./assets/images/lateWinter_thumbnail.png" onclick="openModal();currentSlide(8)" class="hover-shadow" style="height: 300px; width: auto;">
+  </div>
+</div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal"">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content" >
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 8 <br> Early Spring</div>
+        <img src="./assets/images/earlySpring_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 8 <br> Early Summer</div>
+        <img src="./assets/images/earlySummer_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 8 <br> Early Fall</div>
+        <img src="./assets/images/earlyFall_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 8 <br> Early Winter</div>
+        <img src="./assets/images/earlyWinter_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 8 <br> Late Spring</div>
+        <img src="./assets/images/lateSpring_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 8 <br> Late Summer</div>
+        <img src="./assets/images/lateSummer_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 8 <br> Late Fall</div>
+        <img src="./assets/images/lateFall_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 8 <br> Late Winter</div>
+        <img src="./assets/images/lateWinter_thumbnail.png" style="width: 1213px; height: 1213px;">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+    </div>
+  </div> 
+
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer>
+    <div class="left">
+      <p>
+        <strong>We are people, not machines.</strong> <br>
+        Got a question or need personal assistance to pick out the <br>
+        perfect petals. Don’t hesitate to call us at (555) 555-5555.</p>
+    </div>
+    <div class="center">
+      <div class="center-content">
+        <img src="assets/images/logo_with_text.png" alt="logo">
+      </div>
+    </div>
+    <div class="right">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/" target="_blank"
+        class="fa fa-facebook-f fa-lg fa-2x hover-color padding-right"></a>
+      <!--Instagram-->
+      <a href="https://www.instagram.com/" target="_blank"
+        class="fa fa-instagram fa-lg fa-2x hover-color padding-right"></a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-2x hover-color padding-right"></a>
+      <!-- Pinterest -->
+      <a href="https://www.pinterest.com/" target="_blank"
+        class="fa fa-pinterest fa-lg fa-2x hover-color padding-right"></a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/" target="_blank"
+        class="fa fa-linkedin fa-lg fa-2x hover-color padding-right"></a>
+      <!-- GitHub -->
+      <a href="https://www.github.com/" target="_blank" class="fa fa-github-alt fa-lg fa-2x hover-color"></a>
+    </div>
+  </footer>
+
+  <script>
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pink Petals - Supplies</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css" />
+  <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+</head>
+
+<body>
+  <div id="top-bar">
+    <a href="1index.html">
+      <img src="assets/images/logo_with_text.png" alt="Logo" id="top-logo" />
+    </a>
+    <a href="2inspiration.html">Inspiration</a>
+    <a href="3occasions.html">Occasions</a>
+    <a href="4supplies.html">Supplies</a>
+    <a href="5weddings.html">Weddings</a>
+    <a href="6seasons.html">Seasons</a>
+    <a href="7our-story.html">Our Story</a>
+  </div>
+
+  <article>
+    <div>
+      <h1>Supplies</h1>
+      <table id="courses">
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>When to Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./assets/images/metalFrogPin.jpg" /></td>
+            <td>Flower Frog</td>
+            <td>Metal Frog Pin</td>
+            <td>Holding a large number of heavy weight flowers to display evenly</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/metalCageFlowerFrog.jpg" /></td>
+            <td>Flower Frog</td>
+            <td>Metal Cage Flower Frog</td>
+            <td>Holds heavy flowers, prone to rusting if home-made</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/glassFlowerFrog.jpg" /></td>
+            <td>Flower Frog</td>
+            <td>Glass Flower Frog</td>
+            <td>Efficient and sanitary option, cleans easily and less noticable in clear vases</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/images/ceramicFrog.jpg" />
+            </td>
+            <td>Flower Frog</td>
+            <td>Ceramic Frog</td>
+            <td>Heavy weight and diverse color options, can distribute flowers evenly</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/plasticFrog.jpg" /></td>
+            <td>Flower Frog</td>
+            <td>Plastic Frog</td>
+            <td>Easy to use, widely accessible</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/glassVases.jpg" /></td>
+            <td>Vase</td>
+            <td>Glass Vase</td>
+            <td>Timeless to enhance freshness</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/images/crystalVases.jpg" />
+            </td>
+            <td>Vase</td>
+            <td>Crystal Vase</td>
+            <td>Perfect romantic gift</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/ceramicVases.jpg" /></td>
+            <td>Vase</td>
+            <td>Ceramic Vase</td>
+            <td>Good for home decor</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/metalVases.jpg" /></td>
+            <td>Vase</td>
+            <td>Metal Vase</td>
+            <td>Indoor/outdoor use, durable</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/woodenVase.jpg" /></td>
+            <td>Vase</td>
+            <td>Wooden Vase</td>
+            <td>Unique</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </article>
+
+  <div class="to-top"><a href="#">Top</a></div>
+  <footer>
+    <div class="left">
+      <p>
+        <strong>We are people, not machines.</strong> <br>
+        Got a question or need personal assistance to pick out the <br>
+        perfect petals. Don’t hesitate to call us at (555) 555-5555.</p>
+    </div>
+    <div class="center">
+      <div class="center-content">
+        <img src="assets/images/logo_with_text.png" alt="logo">
+      </div>
+    </div>
+    <div class="right">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/" target="_blank"
+        class="fa fa-facebook-f fa-lg fa-2x hover-color padding-right"></a>
+      <!--Instagram-->
+      <a href="https://www.instagram.com/" target="_blank"
+        class="fa fa-instagram fa-lg fa-2x hover-color padding-right"></a>
+      <!-- Twitter -->
+      <a href="https://twitter.com/" target="_blank" class="fa fa-twitter fa-lg fa-2x hover-color padding-right"></a>
+      <!-- Pinterest -->
+      <a href="https://www.pinterest.com/" target="_blank"
+        class="fa fa-pinterest fa-lg fa-2x hover-color padding-right"></a>
+      <!-- Linkedin -->
+      <a href="https://www.linkedin.com/" target="_blank"
+        class="fa fa-linkedin fa-lg fa-2x hover-color padding-right"></a>
+      <!-- GitHub -->
+      <a href="https://www.github.com/" target="_blank" class="fa fa-github-alt fa-lg fa-2x hover-color"></a>
+    </div>
+  </footer>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#courses").tablesorter({
+        sortList: [[2, 0]],
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc"
+      });
+    });
+  </script>
+  <!-- END JavaScript -->
+</body>
+
+</html>
